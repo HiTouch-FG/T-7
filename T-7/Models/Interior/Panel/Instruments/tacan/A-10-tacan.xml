@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<path>A-10-tacan.ac</path>
+
+<!-- channel left knob-->
+
+   <animation>
+     <type>pick</type>
+	<object-name>knob-down</object-name>
+            <action>
+	   <button>1</button>
+                <repeatable>false</repeatable>
+                         <binding>
+	                  <command>property-adjust</command>
+		      <property>instrumentation/tacan/frequencies/selected-channel[1]</property>
+				<step>1</step>
+				<min>0</min>
+				<max>10</max>
+				<wrap>true</wrap>
+	            </binding>
+		<binding>
+		  <command>nasal</command>
+		  <script>nav_scripts.nav1_freq_update()</script>
+		</binding>
+	</action>
+    </animation>
+
+   <animation>
+     <type>pick</type>
+	<object-name>knob-down</object-name>
+            <action>
+	   <button>0</button>
+                <repeatable>false</repeatable>
+                         <binding>
+	                  <command>property-adjust</command>
+		      <property>instrumentation/tacan/frequencies/selected-channel[2]</property>
+				<step>1</step>
+				<min>0</min>
+				<max>10</max>
+				<wrap>true</wrap>
+	            </binding>
+		<binding>
+		  <command>nasal</command>
+		  <script>nav_scripts.nav1_freq_update()</script>
+		</binding>
+	</action>
+    </animation>
+
+<!-- channel right knob units -->
+  <animation>
+     <type>pick</type>
+	<object-name>knob-up</object-name>
+	    <action>
+	        <button>0</button>
+		  <repeatable>false</repeatable>
+                                <binding>
+			<command>property-adjust</command>
+			<property>instrumentation/tacan/frequencies/selected-channel[3]</property>
+				<step>1</step>
+				<min>0</min>
+				<max>10</max>
+				<wrap>true</wrap>
+		       </binding>
+	  </action>
+        </animation>
+
+<!-- channel right knob X/Y sign -->
+ <animation>
+     <type>pick</type>
+	<object-name>switch-X</object-name>
+	<action>
+		<button>0</button>
+                                <repeatable>false</repeatable>
+		        <binding>
+			<command>nasal</command>
+	                        <script>nav_scripts.tacan_XYtoggle()</script>
+		        </binding>
+              <binding>
+                     <command>property-toggle</command>
+                     <property>sim/sound/click</property>
+              </binding>
+	</action>
+      </animation>
+
+      <animation>
+          <type>pick</type>
+	<object-name>switch-Y</object-name>
+	<action>
+		<button>0</button>
+                                <repeatable>false</repeatable>
+			<button>1</button>
+			<binding>
+			<command>nasal</command>
+			<script>nav_scripts.tacan_XYtoggle()</script>
+			</binding>
+			<binding>
+				<command>nasal</command>
+				<script>nav_scripts.nav1_freq_update()</script>
+			</binding>
+                                    <binding>
+                                         <command>property-toggle</command>
+                                         <property>sim/sound/click</property>
+                                    </binding>
+		</action>
+            </animation>
+
+<!-- texture -->
+	<animation>
+		<type>textranslate</type>
+		<object-name>drum-1</object-name>
+		<property>instrumentation/tacan/frequencies/selected-channel[1]</property>
+		<factor>0.1</factor>
+		<offset>-1</offset>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>textranslate</type>
+		<object-name>drum-2</object-name>
+		<property>instrumentation/tacan/frequencies/selected-channel[2]</property>
+		<factor>0.1</factor>
+		<offset>-1</offset>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>textranslate</type>
+		<object-name>drum-3</object-name>
+		<property>instrumentation/tacan/frequencies/selected-channel[3]</property>
+		<factor>0.1</factor>
+		<offset>-1</offset>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>Y-sign</object-name>
+		<condition>
+			<equals>
+				<property>instrumentation/tacan/frequencies/selected-channel[4]</property>
+				<value>Y</value>
+			</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>X-sign</object-name>
+		<condition>
+			<equals>
+				<property>instrumentation/tacan/frequencies/selected-channel[4]</property>
+				<value>X</value>
+			</equals>
+		</condition>
+	</animation>
+
+<!-- lighting -->
+	<animation>
+		<object-name>tacan</object-name>
+                        <object-name>Switch</object-name>
+    <object-name>Circle</object-name>
+    <object-name>SwitchNut</object-name>
+    <object-name>SwitchRot</object-name>
+		<type>material</type>
+		<emission> 
+			<factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+			<red>0.5</red>
+			<green>0.25</green>
+			<blue>0.25</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<object-name>drums</object-name>
+		<type>material</type>
+		<emission> 
+			<factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+			<red>0.55</red>
+			<green>0.24</green>
+			<blue>0.00</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>range</type>
+		<min-m>0</min-m>
+		<max-m>5</max-m>
+	</animation>
+
+</PropertyList>
+
+
+
+
+

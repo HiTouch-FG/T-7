@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>asi.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>visses</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+    <emission>
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission> 
+  </animation>    
+
+  <animation>
+    <type>rotate</type>
+    <object-name>needle</object-name>
+    <property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
+    <interpolation>
+      <entry><ind>   0 </ind><dep>   0 </dep></entry>
+      <entry><ind>  40 </ind><dep>  15 </dep></entry>
+      <entry><ind>  60 </ind><dep>  50 </dep></entry>
+      <entry><ind>  80 </ind><dep>  85 </dep></entry>
+      <entry><ind> 100 </ind><dep> 115 </dep></entry>
+      <entry><ind> 120 </ind><dep> 145 </dep></entry>
+      <entry><ind> 140 </ind><dep> 180 </dep></entry>
+      <entry><ind> 160 </ind><dep> 215 </dep></entry>
+      <entry><ind> 180 </ind><dep> 250 </dep></entry>
+      <entry><ind> 200 </ind><dep> 285 </dep></entry>
+      <entry><ind> 220 </ind><dep> 300 </dep></entry>
+      <entry><ind> 240 </ind><dep> 315 </dep></entry>
+      <entry><ind> 260 </ind><dep> 330 </dep></entry>
+      <entry><ind> 280 </ind><dep> 345 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+
+
+
+
+

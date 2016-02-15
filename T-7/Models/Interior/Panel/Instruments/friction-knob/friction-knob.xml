@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>friction-knob.ac</path>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>fric-knob</object-name>
+  <property>instrumentation/fric-knob</property>
+  <interpolation>
+   <entry><ind>0.01</ind><dep>90</dep></entry>
+   <entry><ind>0.05</ind><dep>45</dep></entry>
+   <entry><ind>0.1</ind><dep>0</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0 </x-m>
+   <y-m> 0 </y-m>
+   <z-m> 0 </z-m>
+  </center>
+  <axis>
+   <x> 0 </x>
+   <y> 0 </y>
+   <z> -1</z>
+  </axis>
+ </animation>
+
+
+    <animation>
+        <type>pick</type>
+        <object-name>fric-knob</object-name>
+        <action>
+            <button>4</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/fric-knob</property>
+                <step>0.01</step>
+                <min>0.01</min>
+                <max>0.1</max>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>fric-knob</object-name>
+        <action>
+            <button>3</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/fric-knob</property>
+                <step>-0.01</step>
+                <min>0.01</min>
+                <max>0.1</max>
+            </binding>
+        </action>
+    </animation>
+
+  <animation>
+     <type>material</type>
+     <object-name>fric-knob</object-name>
+     <emission> 
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+        <red>0.50</red>
+        <green>0.25</green>
+        <blue>0.25</blue>
+      </emission>
+  </animation> 
+
+</PropertyList>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+    <path>prop-rpm.ac</path>
+
+    <animation>
+        <type>material</type>
+        <object-name>PropRPM.face</object-name>
+        <object-name>Prpm.1</object-name>
+        <object-name>Prop.ind</object-name>
+        <object-name>PropRPMneedle</object-name>
+        <texture>rpm.rgb</texture>    
+     <emission>
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+
+    <animation>
+        <type>rotate</type>
+        <object-name>PropRPMneedle</object-name>
+        <property>engines/engine[0]/n2</property>
+        <interpolation>
+            <entry><ind>0.0</ind><dep>0.0</dep></entry>
+            <entry><ind>100</ind><dep>270</dep></entry>
+        </interpolation>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+
+
+    <animation>
+        <type>rotate</type>
+        <object-name>PropRPMneedle</object-name>
+        <property>engines/engine[0]/n1</property>
+        <interpolation>
+            <entry><ind>0.0</ind><dep>0.0</dep></entry>
+            <entry><ind>100</ind><dep>270</dep></entry>
+        </interpolation>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Prpm.1</object-name>
+        <property>engines/engine[0]/n2</property>
+        <interpolation>
+            <entry><ind>0.0</ind><dep>0.0</dep></entry>
+            <entry><ind>100</ind><dep>3600</dep></entry>
+        </interpolation>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+        <center>
+            <x-m>0.002</x-m>
+            <y-m>-0.009</y-m>
+            <z-m>0.013</z-m>
+        </center>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Prpm.1</object-name>
+        <property>engines/engine[0]/n1</property>
+        <interpolation>
+            <entry><ind>0.0</ind><dep>0.0</dep></entry>
+            <entry><ind>100</ind><dep>3600</dep></entry>
+        </interpolation>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+        <center>
+            <x-m>0.002</x-m>
+            <y-m>-0.009</y-m>
+            <z-m>0.013</z-m>
+        </center>
+    </animation>
+
+</PropertyList>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

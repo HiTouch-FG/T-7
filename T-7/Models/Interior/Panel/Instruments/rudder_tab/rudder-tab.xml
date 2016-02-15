@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>rudder-tab.ac</path>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>rudder-tab</object-name>
+  <object-name>gage</object-name>
+  <property>controls/flight/rudder-trim</property>
+  <interpolation>
+   <entry><ind>1</ind><dep>-113</dep></entry>
+   <entry><ind>0</ind><dep>0</dep></entry>
+   <entry><ind>-1</ind><dep>113</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0 </x-m>
+   <y-m> 0 </y-m>
+   <z-m> 0 </z-m>
+  </center>
+  <axis>
+   <x> 0 </x>
+   <y> 0 </y>
+   <z> 1 </z>
+  </axis>
+ </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>rudder-tab</object-name>
+        <action>
+            <button>3</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>controls/flight/rudder-trim</property>
+                <step>-0.05</step>
+                <min>-1</min>
+                <max>1</max>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>rudder-tab</object-name>
+        <action>
+            <button>4</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>controls/flight/rudder-trim</property>
+                <step>0.05</step>
+                <min>-1</min>
+                <max>1</max>
+            </binding>
+        </action>
+    </animation>
+
+  <animation>
+  <object-name>rudder-tab</object-name>
+  <object-name>gage</object-name>
+<object-name>condition</object-name>
+   <type>material</type>
+     <emission> 
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+        <red>0.50</red>
+        <green>0.25</green>
+        <blue>0.25</blue>
+      </emission>
+  </animation> 
+</PropertyList>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

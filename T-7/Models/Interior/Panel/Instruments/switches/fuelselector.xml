@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>fuel-selector.ac</path>
+
+  <animation>
+    <type>material</type>
+    <object-name>Switch</object-name>
+    <object-name>Circle</object-name>
+    <object-name>SwitchNut</object-name>
+    <object-name>SwitchRot</object-name>
+    <object-name>panel</object-name>
+    <emission>
+      <red>   0.5 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>Switch</object-name>
+    <action>
+       <button>0</button>
+       <repeatable>true</repeatable>
+       <binding>
+         <command>property-assign</command>
+	<property>consumables/fuel/tank/selected</property>
+        <value type="bool">true</value>
+       </binding>
+       <binding>
+         <command>property-assign</command>
+	<property>consumables/fuel/tank[1]/selected</property>
+        <value type="bool">true</value>
+       </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Switch</object-name>
+    <property>consumables/fuel/tank/selected</property>
+    <factor>0</factor>
+    <axis>
+      <x>  0 </x>
+      <y> 0 </y>
+      <z>  1 </z>
+    </axis>
+    <center>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
+  </animation>
+
+<!-- RH -->
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>RH</object-name>
+    <action>
+       <button>0</button>
+       <repeatable>true</repeatable>
+       <binding>
+         <command>property-assign</command>
+	<property>consumables/fuel/tank/selected</property>
+        <value type="bool">true</value>
+       </binding>
+       <binding>
+         <command>property-assign</command>
+	<property>consumables/fuel/tank[1]/selected</property>
+         <value type="bool">false</value>
+       </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Switch</object-name>
+    <property>consumables/fuel/tank[1]/selected</property>
+    <factor>22.5</factor>
+    <axis>
+      <x>  0 </x>
+      <y> 0 </y>
+      <z>  -1 </z>
+    </axis>
+    <center>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
+  </animation>
+
+<!-- LH -->
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>LH</object-name>
+    <action>
+       <button>0</button>
+       <repeatable>true</repeatable>
+       <binding>
+         <command>property-assign</command>
+	<property>consumables/fuel/tank[1]/selected</property>
+        <value type="bool">true</value>
+       </binding>
+       <binding>
+         <command>property-assign</command>
+	<property>consumables/fuel/tank/selected</property>
+         <value type="bool">false</value>
+       </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Switch</object-name>
+    <property>consumables/fuel/tank/selected</property>
+    <factor>22.5</factor>
+    <axis>
+      <x>  0 </x>
+      <y> 0 </y>
+      <z>  1 </z>
+    </axis>
+    <center>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
+  </animation>
+</PropertyList>
+
+
+
+
+
+

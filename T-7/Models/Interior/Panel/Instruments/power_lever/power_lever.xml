@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>power.ac</path>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>lever</object-name>
+  <object-name>select</object-name>
+  <object-name>pom</object-name>
+  <property>controls/engines/engine/throttle</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>42</dep></entry>
+   <entry><ind>0.5</ind><dep>7</dep></entry>
+   <entry><ind>1</ind><dep>-28</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0 </x-m>
+   <y-m> 0 </y-m>
+   <z-m> 0 </z-m>
+  </center>
+  <axis>
+   <x> 0 </x>
+   <y> 1 </y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>condition</object-name>
+  <property>controls/engines/engine/condition</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>30</dep></entry>
+   <entry><ind>0.1</ind><dep>10</dep></entry>
+   <entry><ind>0.5</ind><dep>0</dep></entry>
+   <entry><ind>1</ind><dep>-20</dep></entry>
+  </interpolation>
+  <center>
+   <x-m> 0 </x-m>
+   <y-m> 0 </y-m>
+   <z-m> 0 </z-m>
+  </center>
+  <axis>
+   <x> 0 </x>
+   <y> 1 </y>
+   <z> 0</z>
+  </axis>
+ </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>condition</object-name>
+        <action>
+            <button>3</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>controls/engines/engine/condition</property>
+                <step>0.1</step>
+                <min>0.1</min>
+                <max>1</max>
+            </binding>
+            <binding>
+                <command>property-assign</command>
+                <property>controls/engines/engine/cutoff</property>
+                <value type="bool">false</value>
+            </binding>
+            <binding>
+                <command>property-assign</command>
+                <property>controls/engines/engine/propeller-feather</property>
+                <value type="bool">false</value>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>condition</object-name>
+        <action>
+            <button>4</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>controls/engines/engine/condition</property>
+                <step>-0.1</step>
+                <min>0.1</min>
+                <max>1</max>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>condition</object-name>
+        <action>
+            <button>1</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>controls/engines/engine/condition</property>
+                <value>0</value>
+            </binding>
+            <binding>
+                <command>property-assign</command>
+                <property>controls/engines/engine/cutoff</property>
+                <value type="bool">true</value>
+            </binding>
+            <binding>
+                <command>property-assign</command>
+                <property>controls/engines/engine/propeller-feather</property>
+                <value type="bool">true</value>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>lever</object-name>
+        <action>
+            <button>3</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>controls/engines/engine/throttle</property>
+                <step>0.1</step>
+                <min>0</min>
+                <max>1</max>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>lever</object-name>
+        <action>
+            <button>4</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>controls/engines/engine/throttle</property>
+                <step>-0.1</step>
+                <min>0</min>
+                <max>1</max>
+            </binding>
+        </action>
+    </animation>
+
+  <animation>
+  <object-name>lever</object-name>
+  <object-name>Cylinder</object-name>
+  <object-name>Cylinder.001</object-name>
+<object-name>condition</object-name>
+   <type>material</type>
+     <emission> 
+      <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+        <red>0.50</red>
+        <green>0.25</green>
+        <blue>0.25</blue>
+      </emission>
+  </animation> 
+</PropertyList>
+
+
+
+
+

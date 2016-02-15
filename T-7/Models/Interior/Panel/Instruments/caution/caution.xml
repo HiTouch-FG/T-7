@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+ <path>caution.ac</path>
+
+  <animation>
+    <type>select</type>
+    <object-name>caution</object-name>
+  <condition>
+  <or>
+   <and>
+	<greater-than>
+		<property>systems/electrical/volts</property>
+		<value>16</value>
+	</greater-than>
+     <less-than>
+       <property>engines/engine[0]/rpm</property>
+       <value>100</value>
+     </less-than>
+    </and>
+   <and>
+     <greater-than>
+	<property>systems/electrical/volts</property>
+	<value>16</value>
+     </greater-than>
+     <less-than>
+       <property>systems/electrical/volts</property>
+       <value>24</value>
+     </less-than>
+    </and>
+   <and>
+     <greater-than>
+	<property>systems/electrical/volts</property>
+	<value>16</value>
+     </greater-than>
+     <less-than>
+       <property>systems/electrical/gen-load</property>
+       <value>0.1</value>
+     </less-than>
+    </and>
+   <and>
+	<greater-than>
+		<property>systems/electrical/volts</property>
+		<value>16</value>
+	</greater-than>
+     <less-than>
+       <property>controls/engines/engine/condition</property>
+       <value>0.1</value>
+     </less-than>
+     <equals>
+       <property>gear/gear/wow</property>
+       <value>false</value>
+     </equals>
+    </and>
+   <and>
+	<greater-than>
+	<property>systems/electrical/volts</property>
+	<value>16</value>
+	</greater-than>
+     <less-than>
+       <property>consumables/fuel/total-fuel-lbs</property>
+       <value>50</value>
+     </less-than>
+    </and>
+   <and>
+		<greater-than>
+			<property>systems/electrical/volts</property>
+			<value>16</value>
+		</greater-than>
+       <property>controls/engines/engine/cutoff</property>>
+    </and>
+   <and>
+		<greater-than>
+			<property>systems/electrical/volts</property>
+			<value>16</value>
+		</greater-than>
+     <equals>
+       <property>engines/engine/running</property>
+       <value>false</value>
+     </equals>
+    </and>
+   <and>
+		<greater-than>
+			<property>systems/electrical/volts</property>
+			<value>16</value>
+		</greater-than>
+   <or>
+      <property>controls/gear/brake-parking</property>
+      <property>controls/gear/brake-right</property>
+      <property>controls/gear/brake-left</property>
+   </or>
+   </and>
+   </or>
+   </condition>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>caution</object-name>
+    <emission>
+      <red>   1 </red>
+      <green> 1 </green>
+      <blue>  1 </blue>
+    </emission> 
+  </animation> 
+</PropertyList>
+
+
+

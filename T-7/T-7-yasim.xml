@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  T-7 - 2015 - Hitoshi Uchida
+
+  Wingspan     : 10.47 m    ( ft )
+  lenght       :  7.75 m    ( ft )
+  height       :  2.84 m    ( ft )
+  Empty mass   :  1104 kg   ( lb )
+  Engine 
+     Fan Pressure Ratio: 7.90
+     Max Power at Cruise: 380 shp
+     Max Power at TakeOff: 450 shp
+     Dry Weight: 205 pound (93 kilogram)
+  Cruise speed :  376 km/h (203 kt )
+  cruise distance : 1,200Km
+  fuel capacity : 380LT
+-->
+
+<airplane mass="2433">
+
+  <approach speed="58" aoa="8" fuel="0.3">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
+    <control-setting axis="/controls/engines/engine[0]/condition" value="1.0"/>
+    <control-setting axis="/controls/flight/flaps" value="1.0"/>
+    <control-setting axis="/controls/gear/gear-down" value="1.0"/>
+  </approach>
+
+  <cruise speed="203" alt="10000" fuel="1.0">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="1.0"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
+    <control-setting axis="/controls/engines/engine[0]/condition" value="1.0"/>
+    <control-setting axis="/controls/flight/flaps" value="0.0"/>
+    <control-setting axis="/controls/gear/gear-down" value="0.0"/>
+  </cruise>
+
+  <cockpit x="0.557" y="0" z="0.5"/>
+
+  <fuselage ax="3.883" ay="0" az="0.183" bx="-3.846" by="0" bz="0.183" width="0.818" taper="0.4" midpoint="1"/>
+
+  <wing x="1.073" y="0.200" z="-0.301"
+        chord="2.000"
+        length="5.012"
+        taper="0.55"
+        dihedral="4"
+        camber="0.067">
+        <stall aoa="18" width="1.0" peak="1.5"/>
+        <flap0 start="0.027" end="0.535" lift="1.4" drag="1.5"/>
+        <flap1 start="0.535" end="0.946" lift="1.2" drag="1.1"/>
+
+        <control-input axis="/controls/flight/flaps" control="FLAP0"/>
+        <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
+        <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/> 
+
+        <control-output control="FLAP0" prop="/surface-positions/flap-pos-norm"/>
+        <control-output control="FLAP1" side="left" prop="/surface-positions/left-aileron-pos-norm"/>
+        <control-output control="FLAP1" side="right" prop="/surface-positions/right-aileron-pos-norm"/>
+
+        <control-speed control="FLAP1" transition-time="0.01"/>
+        <control-speed control="FLAP0" transition-time="5"/>
+  </wing>
+
+  <hstab x="-3.183" y="0" z="0.077"
+         chord="1.185"
+         length="1.802"
+         taper="0.39">
+         <stall aoa="20" width="4" peak="1.5"/>
+         <flap0 start="0" end="1.636" lift="2.0" drag="1.1"/>
+
+         <control-input axis="/controls/flight/elevator" control="FLAP0"/>
+         <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
+
+         <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
+  </hstab>
+
+  <vstab x="-2.758" y="0" z="0.100"
+       chord="1.350"
+       length="1.306"
+       taper="0.34"
+       sweep="35">
+       <stall aoa="18" width="3" peak="1.5"/>
+       <flap0 start="0" end="0.935" lift="1.6" drag="1.3"/>
+
+       <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
+       <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
+       <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm" min="1" max="-1"/>
+  </vstab>
+
+  <propeller x="3.5" y="0" z="0.100"
+             mass="252"
+             radius="1"
+             moment="8"
+             cruise-speed="203"
+             cruise-rpm="2700"
+             cruise-alt="20000"
+             cruise-power="380"
+             min-rpm="1500"
+             max-rpm="2700"
+             fine-stop="0.25"
+             coarse-stop="4.0">
+             <actionpt x="4.0" y="0" z="0.250"/>
+             <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE"/>
+             <turbine-engine eng-power="450"
+                             eng-rpm="2700"
+                             alt="0"
+                             flat-rating="380"
+                             min-n2="60" 
+                             max-n2="104"
+                             bsfc="0.46">
+             <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
+             <control-input axis="/controls/engines/engine[0]/starter" control="STARTER"/>
+             <control-input axis="/controls/engines/engine[0]/magnetos" control="MAGNETOS"/>
+             <control-input axis="/controls/engines/engine[0]/propeller-feather" control="PROPFEATHER"/>
+             <control-input axis="/controls/engines/engine[0]/condition" control="CONDLEVER"/>
+             </turbine-engine>
+  </propeller>
+
+  <gear x="0.95" y="1.3" z="-1.15"
+        compression="0.20"
+        spring="0.6"
+        sfric ="0.85">
+        <control-input axis="/controls/gear/brake-left" control="BRAKE" split="true"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
+        <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+        <control-speed control="EXTEND" transition-time="7"/>
+        <control-output control="EXTEND" prop="gear/gear[0]/position-norm"/>
+  </gear>
+
+  <gear x="0.95" y="-1.3" z="-1.15"
+        compression="0.20"
+        spring="0.6"
+        sfric ="0.85">
+        <control-input axis="/controls/gear/brake-right" control="BRAKE" split="true"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
+        <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+        <control-speed control="EXTEND" transition-time="7"/>
+        <control-output control="EXTEND" prop="gear/gear[1]/position-norm"/>
+  </gear>
+
+  <gear x="3.6" y="0" z="-1.15"
+        compression="0.20"
+        spring="0.6"
+        sfric ="0.85">
+        <control-input axis="/controls/flight/rudder" control="STEER" square="true" src0="-1.0" src1="1.0" dst0="-0.8" dst1="0.8"/>
+        <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+        <control-speed control="EXTEND" transition-time="7"/>
+        <control-output control="EXTEND" prop="/gear/gear[2]/position-norm"/>
+   </gear>
+
+  <tank x="1.3" y="2.0" z="-0.0" capacity="300" />
+  <tank x="1.3" y="-2.0" z="-0.0" capacity="300" />
+
+  <ballast x="3.2" y="0" z="-0.8" mass="500"/>
+
+ <thruster x="3.6"  y="0.00" z="-1.15" vx="1" vy="0" vz="0" thrust="100">
+ <control-input axis="/sim/model/pushback/target-speed-fps" control="THROTTLE" src0="-1" src1="1" dst0="-1" dst1="1"/>
+ </thruster>
+
+</airplane>
+
+
+
+
+
+

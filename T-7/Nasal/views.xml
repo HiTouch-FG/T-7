@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <chase-distance-m type="double" archive="y"> -15 </chase-distance-m>
+
+  <view n="100">
+    <name>Passanger Seat View</name>
+    <internal archive="y">true</internal>
+    <type>lookfrom</type>
+    <config>
+       <x-offset-m archive="y">  0.000 </x-offset-m>	<!-- Right -->
+       <y-offset-m archive="y">  0.850 </y-offset-m>	<!-- Up    -->
+       <z-offset-m archive="y">  0.075 </z-offset-m>	<!-- Back  -->
+        <from-model type="bool">true</from-model>
+        <from-model-idx type="int">0</from-model-idx>
+        <ground-level-nearplane-m type="double">0.5f</ground-level-nearplane-m>
+        <default-field-of-view-deg type="double">75.0</default-field-of-view-deg>
+        <default-pitch-deg type="double">-7</default-pitch-deg>
+        <default-heading-deg type="double">0</default-heading-deg>
+        <front-direction-deg type="double">0</front-direction-deg>
+        <front-left-direction-deg type="double">45</front-left-direction-deg>
+        <left-direction-deg type="double">90</left-direction-deg>
+        <back-left-direction-deg type="double">135</back-left-direction-deg>
+        <back-direction-deg type="double">180</back-direction-deg>
+        <back-right-direction-deg type="double">225</back-right-direction-deg>
+        <right-direction-deg type="double">270</right-direction-deg>
+        <front-right-direction-deg type="double">315</front-right-direction-deg>
+        <dynamic-view type="bool">true</dynamic-view>
+        <limits>
+          <enabled type="bool">true</enabled>
+          <left>
+            <heading-max-deg type="double">140</heading-max-deg>
+            <x-offset-max-m type="double">0.20</x-offset-max-m>
+            <x-offset-threshold-deg type="double">65</x-offset-threshold-deg>
+          </left>
+          <right>
+            <heading-max-deg type="double">140</heading-max-deg>
+            <x-offset-max-m type="double">0.20</x-offset-max-m>
+            <x-offset-threshold-deg type="double">65</x-offset-threshold-deg>
+          </right>
+        </limits>
+      </config>
+  </view>
+
+  <view n="0">
+    <internal archive="y">true</internal>
+    <config>
+       <x-offset-m archive="y">  0.000 </x-offset-m>	<!-- Right -->
+       <y-offset-m archive="y">  0.82 </y-offset-m>	<!-- Up    -->
+       <z-offset-m archive="y"> -1.300 </z-offset-m>	<!-- Back  -->
+       <pitch-offset-deg> -5 </pitch-offset-deg>
+      <default-field-of-view-deg> 76 </default-field-of-view-deg>
+    </config>
+  </view>
+
+</PropertyList>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

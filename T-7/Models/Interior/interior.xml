@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+
+
+  <animation>
+	  <type>material</type>
+              <object-name>Panel-RH_0</object-name>
+	  <object-name>Panel-RH_1</object-name>
+              <object-name>RH-Panel-2_1</object-name>
+              <object-name>RH-Panel-2_0</object-name>
+	  <emission>
+		  <red>   0.5 </red>
+		  <green> 0.25 </green>
+		  <blue>  0.25 </blue>
+		  <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+	  </emission>
+  </animation>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+    <object-name>inttourverriere</object-name>
+    <object-name>co-intverrierer</object-name>
+    <object-name>co-inttourverrierer</object-name>
+  </animation>
+
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>shader.png</texture>
+    <object-name>co-intverriere</object-name>
+  </animation>
+
+  <!-- Pilote -->
+  <model>
+    <name>Pilote</name>
+    <path>Aircraft/T-7/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -1.200 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.390 </z-m>
+    </offsets>
+  </model>
+
+  <!-- TourPilote -->
+  <model>
+    <name>TourPilote</name>
+    <path>Aircraft/T-7/Models/Pilot/tourpilot.xml</path>
+    <offsets>
+      <x-m>  0.100 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.390 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Tableau de bord -->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -0 </x-m>
+      <y-m>  0</y-m>
+      <z-m>  0.00 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Canopy -->
+  <animation>
+    <name>IntCanopyTotale</name>
+    <object-name>inttourverriere</object-name>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>IntCanopyTotale</object-name>
+    <property>instrumentation/doors/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep> 0.00 </dep></entry>
+      <entry><ind> 1.00 </ind><dep> 0.6 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+

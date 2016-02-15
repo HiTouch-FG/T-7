@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList include="T-7-yasim-cnf.xml">
+
+  <sim>
+    <description>T-7 (YASim)</description>
+    <status>Ver.2.2</status>
+    <author>Hitoshi Uchida(3D/FDM)</author>
+  </sim>
+
+</PropertyList>
+
+
+

@@ -1,0 +1,1351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+	  <type>material</type>
+              <object-name>Plane</object-name>
+	  <emission>
+		  <red>   0.5 </red>
+		  <green> 0.25 </green>
+		  <blue>  0.25 </blue>
+		  <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+	  </emission>
+  </animation>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- ASI --> 
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m> -1.805 </x-m>
+      <y-m> -0.115</y-m>
+      <z-m> 0.555 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+  <!--co_pilot ASI --> 
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m> -0.434 </x-m>
+      <y-m> -0.115 </y-m>
+      <z-m> 0.555 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- AI --> 
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/ai/adi.xml</path>
+    <offsets>
+      <x-m> -1.805 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.555 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!--co-pilot AI --> 
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/ai/adi.xml</path>
+    <offsets>
+      <x-m> -0.434 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.555 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model> 
+
+ <!-- TURN --> 
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m> -1.805 </x-m>
+      <y-m> -0.115 </y-m>
+      <z-m> 0.460 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+ <!--co-pilot TURN --> 
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m> -0.434 </x-m>
+      <y-m> -0.115 </y-m>
+      <z-m> 0.460 </z-m>>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- ALT --> 
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m>  -1.805</x-m>
+      <y-m> 0.116 </y-m>
+      <z-m> 0.554 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- co-pilot ALT --> 
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m>  -0.435</x-m>
+      <y-m> 0.116 </y-m>
+      <z-m> 0.554 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- DG --> 
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/dg/dg.xml</path>
+    <offsets>
+      <x-m> -1.760 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.720 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!--co-pilot DG --> 
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/dg/dg.xml</path>
+    <offsets>
+      <x-m> -0.390 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.725 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- VSI --> 
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/vsi/vsi-6kfpm.xml</path>
+    <offsets>
+      <x-m>  -1.805</x-m>
+      <y-m>  0.116 </y-m>
+      <z-m> 0.460 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!--co-pilot VSI --> 
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/vsi/vsi-6kfpm.xml</path>
+    <offsets>
+      <x-m>  -0.435</x-m>
+      <y-m>  0.116 </y-m>
+      <z-m> 0.460 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- HSI --> 
+  <model>
+     <path>Aircraft/T-7/Models/Interior/Panel/Instruments/hsi/A-10-HSI.xml</path>
+    <offsets>
+       <x-m> -1.800 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.445 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- co-HSI -->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/hsi/A-10-HSI.xml</path>
+    <offsets>
+       <x-m> -0.430 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.445 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+<!--ACC-->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/acc/accel.xml</path>
+    <offsets>
+       <x-m> -1.805 </x-m>
+      <y-m> -0.205 </y-m>
+      <z-m> 0.580 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+<!--co-pilot ACC-->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/acc/accel.xml</path>
+    <offsets>
+       <x-m> -0.435 </x-m>
+      <y-m> -0.205 </y-m>
+      <z-m> 0.580 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!--rpm-->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/rpm/prop-rpm.xml</path>
+    <offsets>
+       <x-m> -1.810 </x-m>
+      <y-m> 0.270 </y-m>
+      <z-m> 0.510 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+<!--co-pilot rpm-->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/rpm/prop-rpm.xml</path>
+    <offsets>
+       <x-m> -0.435 </x-m>
+      <y-m> 0.270 </y-m>
+      <z-m> 0.510 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+<!--rpm n2-->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/rpm-n2/prop-rpm.xml</path>
+    <offsets>
+       <x-m> -1.810 </x-m>
+      <y-m> 0.270 </y-m>
+      <z-m> 0.440 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+<!--co-pilot rpm n2-->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/rpm-n2/prop-rpm.xml</path>
+    <offsets>
+       <x-m> -0.435 </x-m>
+      <y-m> 0.270 </y-m>
+      <z-m> 0.440 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+<!--trq-->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/trq/trq.xml</path>
+    <offsets>
+       <x-m> -1.810 </x-m>
+      <y-m> 0.200 </y-m>
+      <z-m> 0.575 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+<!--co-pilot trq-->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/trq/trq.xml</path>
+    <offsets>
+       <x-m> -0.435 </x-m>
+      <y-m> 0.200 </y-m>
+      <z-m> 0.575 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+<!--tqt-->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/tqt/tqt.xml</path>
+    <offsets>
+       <x-m> -1.810 </x-m>
+      <y-m> 0.200 </y-m>
+      <z-m> 0.508 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+<!--co-pilot tqt-->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/tqt/tqt.xml</path>
+    <offsets>
+       <x-m> -0.435 </x-m>
+      <y-m> 0.200 </y-m>
+      <z-m> 0.508 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+<!--psi-->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/psi/psi.xml</path>
+    <offsets>
+       <x-m> -1.810 </x-m>
+      <y-m> 0.200 </y-m>
+      <z-m> 0.440 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+<!--co-pilot psi-->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/psi/psi.xml</path>
+    <offsets>
+       <x-m> -0.435 </x-m>
+      <y-m> 0.200 </y-m>
+      <z-m> 0.440 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+<!--FuelGauge-->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/FuelGauge/FuelGauge.xml</path>
+    <offsets>
+       <x-m> -1.800 </x-m>
+      <y-m> 0.100 </y-m>
+      <z-m> 0.381 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+<!--co-pilot FuelGauge-->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/FuelGauge/FuelGauge.xml</path>
+    <offsets>
+       <x-m> -0.430 </x-m>
+      <y-m> 0.100 </y-m>
+      <z-m> 0.381 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+<!--clock-->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/M877/m877.xml</path>
+    <offsets>
+       <x-m> -1.810 </x-m>
+      <y-m> -0.205 </y-m>
+      <z-m> 0.500 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+<!--co-pilot clocke-->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/M877/m877.xml</path>
+    <offsets>
+       <x-m> -0.430 </x-m>
+      <y-m> -0.205 </y-m>
+      <z-m> 0.500 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!--light-->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/switches/lights.xml</path>
+    <offsets>
+      <x-m> -1.435 </x-m>
+      <y-m>  0.338 </y-m>
+      <z-m>  0.178 </z-m>
+      <roll-deg>    12 </roll-deg>
+      <pitch-deg>  -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--co-light-->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/switches/lights.xml</path>
+    <offsets>
+      <x-m> -0.050 </x-m>
+      <y-m>  0.338 </y-m>
+      <z-m>  0.178 </z-m>
+      <roll-deg>    12 </roll-deg>
+      <pitch-deg>  -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--Landing-light-->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/switches/landing-lights.xml</path>
+    <offsets>
+       <x-m> -1.790 </x-m>
+      <y-m> -0.400 </y-m>
+      <z-m> 0.302 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   -5 </pitch-deg>
+      <heading-deg> 5 </heading-deg>
+    </offsets>
+  </model>
+
+<!--co-Landing-light-->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/switches/landing-lights.xml</path>
+    <offsets>
+       <x-m> -0.426 </x-m>
+      <y-m> -0.400 </y-m>
+      <z-m> 0.302 </z-m>
+      <roll-deg>   0 </roll-deg>
+      <pitch-deg>  -5 </pitch-deg>
+      <heading-deg> 5 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/switches/ignition.xml</path>
+    <offsets>
+      <x-m> -1.650 </x-m>
+      <y-m> 0.325 </y-m>
+      <z-m> 0.175</z-m>
+      <roll-deg>    12 </roll-deg>
+      <pitch-deg>   -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/switches/ignition.xml</path>
+    <offsets>
+      <x-m> -0.265 </x-m>
+      <y-m> 0.325 </y-m>
+      <z-m> 0.175</z-m>
+      <roll-deg>    12 </roll-deg>
+      <pitch-deg>   -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/switches/starter.xml</path>
+    <offsets>
+      <x-m> -1.700 </x-m>
+      <y-m> -0.310 </y-m>
+      <z-m> 0.190</z-m>
+      <roll-deg>    -12 </roll-deg>
+      <pitch-deg>  -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/switches/master.xml</path>
+    <offsets>
+      <x-m> -1.730 </x-m>
+      <y-m> 0.326 </y-m>
+      <z-m> 0.176</z-m>
+      <roll-deg> 12 </roll-deg>
+      <pitch-deg>   -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--GEAR HANDLE-->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/Landing-Gear/gearhandle.xml</path>
+    <offsets>
+       <x-m> -1.795 </x-m>
+      <y-m> -0.380 </y-m>
+      <z-m> 0.350 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   -5 </pitch-deg>
+      <heading-deg> 5 </heading-deg>
+    </offsets>
+  </model>
+
+<!--co-GEAR HANDLE-->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/Landing-Gear/gearhandle.xml</path>
+    <offsets>
+       <x-m> -0.433 </x-m>
+      <y-m> -0.380 </y-m>
+      <z-m> 0.350 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   -5 </pitch-deg>
+      <heading-deg> 5 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/Lights/nosegear-lamp.xml</path>
+    <offsets>
+       <x-m> -1.805 </x-m>
+      <y-m> -0.295 </y-m>
+      <z-m> 0.487 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/Lights/nosegear-lamp.xml</path>
+    <offsets>
+       <x-m> -0.430 </x-m>
+      <y-m> -0.295 </y-m>
+      <z-m> 0.487 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/Lights/nosegear-lamp.xml</path>
+    <offsets>
+       <x-m> -1.805 </x-m>
+      <y-m> -0.267 </y-m>
+      <z-m> 0.487 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/Lights/nosegear-lamp.xml</path>
+    <offsets>
+       <x-m> -0.430 </x-m>
+      <y-m> -0.267 </y-m>
+      <z-m> 0.487 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/Lights/nosegear-lamp.xml</path>
+    <offsets>
+       <x-m> -1.805 </x-m>
+      <y-m> -0.282 </y-m>
+      <z-m> 0.505</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/Lights/nosegear-lamp.xml</path>
+    <offsets>
+       <x-m> -0.430 </x-m>
+      <y-m> -0.282 </y-m>
+      <z-m> 0.505</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/COMM/comm1.xml</path>
+    <offsets>
+       <x-m> -1.805 </x-m>
+      <y-m> -0.100 </y-m>
+      <z-m> 0.372</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/COMM/comm1.xml</path>
+    <offsets>
+       <x-m> -0.433 </x-m>
+      <y-m> -0.100 </y-m>
+      <z-m> 0.372</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/COMM/uhf.xml</path>
+    <offsets>
+       <x-m> -1.805 </x-m>
+      <y-m> -0.163 </y-m>
+      <z-m> 0.372</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/COMM/uhf.xml</path>
+    <offsets>
+       <x-m> -0.433 </x-m>
+      <y-m> -0.163 </y-m>
+      <z-m> 0.372</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/DME/dme.xml</path>
+    <offsets>
+       <x-m> -1.805 </x-m>
+      <y-m> -0.035 </y-m>
+      <z-m> 0.365</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/DME/dme.xml</path>
+    <offsets>
+       <x-m> -0.433 </x-m>
+      <y-m> -0.035 </y-m>
+      <z-m> 0.365</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/DME/nav-lamp.xml</path>
+    <offsets>
+       <x-m> -1.805 </x-m>
+      <y-m> 0.030 </y-m>
+      <z-m> 0.365</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/DME/nav-lamp.xml</path>
+    <offsets>
+       <x-m> -0.433 </x-m>
+      <y-m> 0.030 </y-m>
+      <z-m> 0.365</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/DME/tacan-lamp.xml</path>
+    <offsets>
+       <x-m> -1.805 </x-m>
+      <y-m> 0.000</y-m>
+      <z-m> 0.365</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/DME/tacan-lamp.xml</path>
+    <offsets>
+       <x-m> -0.433 </x-m>
+      <y-m> 0.000</y-m>
+      <z-m> 0.365</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--TACAN -->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/tacan/A-10-tacan.xml</path>
+    <offsets>
+       <x-m> -1.805 </x-m>
+      <y-m> -0.233 </y-m>
+      <z-m> 0.372</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--co-TACAN -->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/tacan/A-10-tacan.xml</path>
+    <offsets>
+       <x-m> -0.437 </x-m>
+      <y-m> -0.233 </y-m>
+      <z-m> 0.372</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/kt70/kt70.xml</path>
+    <offsets>
+       <x-m> -1.805 </x-m>
+      <y-m> -0.247 </y-m>
+      <z-m> 0.435</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!-- FLAP PANEL-->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/flap-panel/flap-panel.xml</path>
+    <offsets>
+       <x-m> -1.807 </x-m>
+      <y-m> -0.297 </y-m>
+      <z-m> 0.515</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- co-FLAP PANEL-->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/flap-panel/flap-panel.xml</path>
+    <offsets>
+       <x-m> -0.433 </x-m>
+      <y-m> -0.297 </y-m>
+      <z-m> 0.515</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/trim/trimwheel.xml</path>
+    <offsets>
+       <x-m> -1.450 </x-m>
+      <y-m> -0.290 </y-m>
+      <z-m> 0.110</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--FuelGauge-->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/switches/fuelselector.xml</path>
+    <offsets>
+       <x-m> -1.809 </x-m>
+      <y-m> 0.100 </y-m>
+      <z-m> 0.330 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--BatteryGauge-->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/BatteryGauge/BatteryGauge.xml</path>
+    <offsets>
+       <x-m> -1.800 </x-m>
+      <y-m> 0.166 </y-m>
+      <z-m> 0.386 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+
+<!--parkingBrake-->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/parking-brake/brake-knob.xml</path>
+    <offsets>
+       <x-m> -1.818 </x-m>
+      <y-m> -0.260 </y-m>
+      <z-m> 0.295 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!--co-parkingBrake-->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/parking-brake/brake-knob.xml</path>
+    <offsets>
+       <x-m> -0.447 </x-m>
+      <y-m> -0.262 </y-m>
+      <z-m> 0.305 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- stall lamp --> 
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/Lights/stall-lamp.xml</path>
+    <offsets>
+      <x-m> -1.810 </x-m>
+      <y-m> -0.095</y-m>
+      <z-m> 0.622 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+  <!-- co-stall lamp --> 
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/Lights/stall-lamp.xml</path>
+    <offsets>
+      <x-m> -0.433 </x-m>
+      <y-m> -0.095</y-m>
+      <z-m> 0.622 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/COMM/VOR.xml</path>
+    <offsets>
+      <x-m> -1.500 </x-m>
+      <y-m> 0.375 </y-m>
+      <z-m> 0.1823</z-m>
+      <roll-deg> 11.3 </roll-deg>
+      <pitch-deg>   -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/COMM/VOR.xml</path>
+    <offsets>
+      <x-m> -0.108 </x-m>
+      <y-m> 0.375 </y-m>
+      <z-m> 0.1823</z-m>
+      <roll-deg> 11.3 </roll-deg>
+      <pitch-deg>   -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- stall lamp switch --> 
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -1.810 </x-m>
+      <y-m> -0.125</y-m>
+      <z-m> 0.627 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+  <!-- co-stall lamp switch --> 
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -0.433 </x-m>
+      <y-m> -0.125</y-m>
+      <z-m> 0.627 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- rh panel knob--> 
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/knob/knob.xml</path>
+    <offsets>
+      <x-m> -1.802 </x-m>
+      <y-m> 0.377</y-m>
+      <z-m> 0.415 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -2 </pitch-deg>
+      <heading-deg> -9 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/knob/knob.xml</path>
+    <offsets>
+      <x-m> -1.790 </x-m>
+      <y-m> 0.395</y-m>
+      <z-m> 0.285 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>  -2 </pitch-deg>
+      <heading-deg> -9 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/knob/knob.xml</path>
+    <offsets>
+      <x-m> -1.788 </x-m>
+      <y-m> 0.395</y-m>
+      <z-m> 0.230 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>  -2 </pitch-deg>
+      <heading-deg> -9 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/knob/knob.xml</path>
+    <offsets>
+      <x-m> -1.798 </x-m>
+      <y-m> 0.343</y-m>
+      <z-m> 0.230 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>  -2 </pitch-deg>
+      <heading-deg> -9 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/knob/knob.xml</path>
+    <offsets>
+      <x-m> -1.800 </x-m>
+      <y-m> 0.343</y-m>
+      <z-m> 0.285 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>  -2 </pitch-deg>
+      <heading-deg> -9 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -1.795 </x-m>
+      <y-m> 0.397</y-m>
+      <z-m> 0.377 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -2 </pitch-deg>
+      <heading-deg> -9 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -1.798 </x-m>
+      <y-m> 0.375 </y-m>
+      <z-m> 0.377 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -2 </pitch-deg>
+      <heading-deg> -9 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/switches/starter2.xml</path>
+    <offsets>
+      <x-m> -1.795 </x-m>
+      <y-m> 0.400</y-m>
+      <z-m> 0.410 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -2 </pitch-deg>
+      <heading-deg> -9 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!-- beacon -->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/switches/beacon-lights.xml</path>
+    <offsets>
+      <x-m> -1.650 </x-m>
+      <y-m> 0.370 </y-m>
+      <z-m> 0.185</z-m>
+      <roll-deg>  12 </roll-deg>
+      <pitch-deg>  -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- beacon -->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/switches/beacon-lights.xml</path>
+    <offsets>
+      <x-m> -0.265 </x-m>
+      <y-m> 0.370 </y-m>
+      <z-m> 0.185</z-m>
+      <roll-deg>  12 </roll-deg>
+      <pitch-deg>  -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- nav-lights -->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/switches/nav-lights.xml</path>
+    <offsets>
+      <x-m> -1.650 </x-m>
+      <y-m> 0.415 </y-m>
+      <z-m> 0.194</z-m>
+      <roll-deg>  12 </roll-deg>
+      <pitch-deg>  -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- nav-lights -->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/switches/nav-lights.xml</path>
+    <offsets>
+      <x-m> -0.265 </x-m>
+      <y-m> 0.415 </y-m>
+      <z-m> 0.194</z-m>
+      <roll-deg>  12 </roll-deg>
+      <pitch-deg>  -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- INV -->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/switches/switch.xml</path>
+    <offsets>
+      <x-m> -1.730 </x-m>
+      <y-m> 0.370 </y-m>
+      <z-m> 0.185</z-m>
+      <roll-deg>    -12 </roll-deg>
+      <pitch-deg>  -90 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- GEN -->
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/switches/gen.xml</path>
+    <offsets>
+      <x-m> -1.730 </x-m>
+      <y-m> 0.415 </y-m>
+      <z-m> 0.194</z-m>
+      <roll-deg>    12 </roll-deg>
+      <pitch-deg>  -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/ICS/ICS.xml</path>
+    <offsets>
+      <x-m> -1.582 </x-m>
+      <y-m> 0.375 </y-m>
+      <z-m> 0.1823</z-m>
+      <roll-deg> 11.3 </roll-deg>
+      <pitch-deg>   -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/ICS/ICS.xml</path>
+    <offsets>
+      <x-m> -0.190 </x-m>
+      <y-m> 0.375 </y-m>
+      <z-m> 0.1823</z-m>
+      <roll-deg> 11.3 </roll-deg>
+      <pitch-deg>   -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/LT/LT.xml</path>
+    <offsets>
+      <x-m> -1.418 </x-m>
+      <y-m> 0.375 </y-m>
+      <z-m> 0.1823</z-m>
+      <roll-deg> 11.3 </roll-deg>
+      <pitch-deg>   -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/LT/LT.xml</path>
+    <offsets>
+      <x-m> -0.030 </x-m>
+      <y-m> 0.375 </y-m>
+      <z-m> 0.1823</z-m>
+      <roll-deg> 11.3 </roll-deg>
+      <pitch-deg>   -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/power_lever/power_lever.xml</path>
+    <offsets>
+      <x-m> -1.640 </x-m>
+      <y-m> -0.387 </y-m>
+      <z-m> 0.120</z-m>
+      <roll-deg> -11.3 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/power_lever/power_lever.xml</path>
+    <offsets>
+      <x-m> -0.260 </x-m>
+      <y-m> -0.387 </y-m>
+      <z-m> 0.120</z-m>
+      <roll-deg> -11.3 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/flap-switch/flap_sw.xml</path>
+    <offsets>
+      <x-m> -1.550 </x-m>
+      <y-m> -0.400 </y-m>
+      <z-m> 0.350</z-m>
+      <roll-deg> -7 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/flap-switch/flap_sw.xml</path>
+    <offsets>
+      <x-m> -0.200 </x-m>
+      <y-m> -0.400 </y-m>
+      <z-m> 0.350</z-m>
+      <roll-deg> -7 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/rudder_tab/rudder-tab.xml</path>
+    <offsets>
+      <x-m> -1.480 </x-m>
+      <y-m> -0.387 </y-m>
+      <z-m> 0.190</z-m>
+      <roll-deg> 17 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/rudder_tab/rudder-tab.xml</path>
+    <offsets>
+      <x-m> -0.100 </x-m>
+      <y-m> -0.387 </y-m>
+      <z-m> 0.190</z-m>
+      <roll-deg> 17 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/friction-knob/friction-knob.xml</path>
+    <offsets>
+       <x-m> -1.645 </x-m>
+      <y-m> -0.295 </y-m>
+      <z-m> 0.120</z-m>
+      <roll-deg>    90 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/friction-knob/friction-knob.xml</path>
+    <offsets>
+       <x-m> -0.260 </x-m>
+      <y-m> -0.295 </y-m>
+      <z-m> 0.120</z-m>
+      <roll-deg>    90 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/trim/aileron-trim.xml</path>
+    <offsets>
+       <x-m> -1.340 </x-m>
+      <y-m> -0.390 </y-m>
+      <z-m> 0.117</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   -11.5 </pitch-deg>
+      <heading-deg> -90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/trim/aileron-trim.xml</path>
+    <offsets>
+       <x-m> 0.020 </x-m>
+      <y-m> -0.390 </y-m>
+      <z-m> 0.117</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   -11.5 </pitch-deg>
+      <heading-deg> -90 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- brake caution --> 
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/caution/caution.xml</path>
+    <offsets>
+      <x-m> -1.810 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.640 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+  <!-- co-brake caution --> 
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/caution/caution.xml</path>
+    <offsets>
+      <x-m> -0.440 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.640 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- INDICATE PANEL --> 
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/indicate-panel/indicate-panel.xml</path>
+    <offsets>
+      <x-m> -1.815 </x-m>
+      <y-m> 0.270 </y-m>
+      <z-m> 0.362 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- INDICATE PANEL --> 
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/indicate-panel/indicate-panel.xml</path>
+    <offsets>
+      <x-m> -0.440 </x-m>
+      <y-m> 0.270 </y-m>
+      <z-m> 0.362 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- OUTER TEMP --> 
+  <model>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/outer_temp/outer_temp.xml</path>
+    <offsets>
+      <x-m> -1.600 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 1.000 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   50 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+</PropertyList>
+
+
+
