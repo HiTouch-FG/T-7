@@ -987,7 +987,7 @@
   </model>
 
   <model>
-    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/knob/knob.xml</path>
+    <path>Aircraft/T-7/Models/Interior/Panel/Instruments/defroster-knob/defroster-knob.xml</path>
     <offsets>
       <x-m> -1.800 </x-m>
       <y-m> 0.343</y-m>

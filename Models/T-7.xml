@@ -4,6 +4,29 @@
 
   <path>T-7.ac</path>
 
+ <!-- Canopy -->
+    <animation>
+        <type>select</type>
+        <condition>
+            <not>
+                <property>/sim/rendering/rembrandt/enabled</property>
+            </not>
+        </condition>
+    <object-name>vitres_2</object-name>
+    <object-name>verriere_2</object-name>
+    <object-name>co-verriere_2</object-name>
+    </animation>
+
+
+<!-- Uncomment this section for FG 3.5 ALS Glass effects -->
+    <effect>
+        <inherits-from>Effects/glass</inherits-from>
+    <object-name>vitres_2</object-name>
+    <object-name>verriere_2</object-name>
+    <object-name>co-verriere_2</object-name>
+    </effect>
+
+
   <nasal>
     <load>
       var livery_update = aircraft.livery_update.new("Aircraft/T-7/Models/Liveries", 10);
@@ -28,6 +51,7 @@
     <object-name>verriere</object-name>
     <object-name>co-verriere</object-name>
   </animation>
+
 
   <animation>
     <type>noshadow</type>
@@ -748,6 +772,7 @@
     <name>CanopyTotale</name>
     <object-name>verriere</object-name>
     <object-name>tourverriere</object-name>
+    <object-name>verriere_2</object-name>
   </animation>
 
   <animation>

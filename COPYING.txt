@@ -1,10 +1,7 @@
 	　　　　GNU GENERAL PUBLIC LICENSE
              FlightGear Model T-7 
- Copyright (C) 2015 Uchi craft room / Hitoshi Uchida
+ Copyright (C) 2016 Uchi craft room / Hitoshi Uchida
                        
-one line to give the program's name and an idea of what it does.
-Copyright (C) yyyy  name of author
-
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
 as published by the Free Software Foundation; either version 2
@@ -21,7 +18,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 (訳: 
           FlightGear Model T-7 
-Copyright (C) 2015 Uchi craft room / Hitoshi Uchida
+Copyright (C) 2016 Uchi craft room / Hitoshi Uchida
 
 このプログラムはフリーソフトウェアです。あなたはこれを、フリーソフトウェ
 ア財団によって発行された GNU 一般公衆利用許諾契約書(バージョン2か、希

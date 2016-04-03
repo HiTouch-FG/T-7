@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<path>knob.ac</path>
+
+  <animation>
+	  <type>material</type>
+	  <object-name>push</object-name>
+              <object-name>rim</object-name>
+	  <emission>
+		  <red>   0.5 </red>
+		  <green> 0.25 </green>
+		  <blue>  0.25 </blue>
+		  <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+	  </emission>
+  </animation>
+
+<!-- LOCK -->
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>knob</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>/controls/anti-ice/window-heat</property>
+        <value>true</value>
+      </binding>
+    <binding>
+        <command>property-assign</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+<!-- RELEASE -->
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>push</object-name>
+    <action>
+      <button>1</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>/controls/anti-ice/window-heat</property>
+        <value>false</value>
+      </binding>
+    <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+<!--  action -->
+<animation>
+ <type>translate</type>
+  <object-name>knob</object-name>
+ <object-name>shaft</object-name>
+ <object-name>push</object-name>
+  <property>/controls/anti-ice/window-heat</property>
+  <factor>0.03</factor>
+  <axis>
+    <x>1</x>
+    <y>0</y>
+    <z>0</z>
+  </axis>
+  </animation>
+</PropertyList>
+
+
+
