@@ -85,9 +85,14 @@ setlistener("/engines/engine[0]/n2",func{
 props.globals.getNode("/environment/aircraft-effects/splash-vector-y", 0).setIntValue(0.01);
 props.globals.getNode("/environment/aircraft-effects/splash-vector-z", 0).setIntValue(-1);
 
+#TAT
+
+setlistener("/engines/engine[0]/n2",func{
+             interpolate("/environment/total-air-temperature-degc",getprop("/environment/temperature-degc")+ ((getprop("/environment/temperature-degc")+ 273) * 0.2 * (getprop("/velocities/mach") * getprop("/velocities/mach"))),5)});
+
 #frost
 setprop("/environment/windowheat-level", 1);
 setlistener("/engines/engine[0]/n2",func{
-             interpolate("/environment/aircraft-effects/frost-level",(getprop("/environment/temperature-degc")+10)*getprop("/environment/windowheat-level")*-0.05,1)});
+             interpolate("/environment/aircraft-effects/frost-level",(getprop("/environment/total-air-temperature-degc")+10)*getprop("/environment/windowheat-level")*-0.03,1)});
 setlistener("/controls/anti-ice/window-heat",func{
              interpolate("/environment/windowheat-level",1-getprop("/controls/anti-ice/window-heat")*0.9,10)});

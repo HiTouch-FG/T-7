@@ -4,19 +4,12 @@
 
   <path>shadow.ac</path>
 
-  <animation>
-    <!-- Objets opaques -->
-
-    <!-- Objets transparents -->
+   <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>shadow</object-name>
-  </animation>
+   </effect>
 
-  <animation>
-    <type>noshadow</type>
-    <object-name>shadow</object-name>
-  </animation>
-
-  <!-- Une ombre pour OSG en attendant mieux ;) basé sur l'ombre du DC 3-->
+  <!-- Une ombre pour OSG en attendant mieux ;) base sur l'ombre du DC 3-->
   <!-- pitch -->
   <animation>
     <type>rotate</type>

@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<PropertyList include="T-7-yasim-cnf.xml">
+<PropertyList include="T-7-base.xml">
 
   <sim>
     <description>T-7 (YASim)</description>
-    <status>Ver.2.2</status>
     <author>Hitoshi Uchida(3D/FDM)</author>
+    <flight-model archive="y">yasim</flight-model>
+    <aero archive="y">T-7-yasim</aero>
+    <status>v2.4</status>
   </sim>
 
 </PropertyList>
