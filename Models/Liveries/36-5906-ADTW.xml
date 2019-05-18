@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <sim>
+    <model>
+	<livery>
+        <name type="string">36-5906-ADTW</name>
+        <texture>Liveries/36-5906-ADTW.png</texture>
+	</livery>
+	<livery-logo>
+	<texture>Liveries/36-5906-ADTW.png</texture>
+	</livery-logo>
+    </model>
+  </sim>
+</PropertyList>
+
+
+
+
+
+
+
+
+
+
+
+

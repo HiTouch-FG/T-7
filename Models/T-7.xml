@@ -53,9 +53,12 @@
   </animation>
 
 
+
   <animation>
     <type>noshadow</type>
     <object-name>vitres</object-name>
+    <object-name>verriere</object-name>
+    <object-name>co-verriere</object-name>
   </animation>
 
 
@@ -92,11 +95,9 @@
     <object-name>tourverriere</object-name>
     <object-name>co-tourverriere</object-name>
     <object-name>air</object-name>
-
-    <!--<property-base>sim/model/livery</property-base>-->
+    <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
-    <texture>texture.png</texture>
-
+    <texture>Aircraft/T-7/Models/Liveries/Default.png</texture>
     <shininess>128</shininess>
   </animation>
 

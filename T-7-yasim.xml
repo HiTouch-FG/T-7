@@ -19,7 +19,7 @@
 
 <airplane mass="2433">
 
-  <approach speed="58" aoa="8" fuel="0.3">
+  <approach speed="58" aoa="8" fuel="0.7">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
     <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
     <control-setting axis="/controls/engines/engine[0]/condition" value="1.0"/>
@@ -27,7 +27,7 @@
     <control-setting axis="/controls/gear/gear-down" value="1.0"/>
   </approach>
 
-  <cruise speed="203" alt="10000" fuel="1.0">
+  <cruise speed="203" alt="10000" fuel="0.8">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="1.0"/>
     <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
     <control-setting axis="/controls/engines/engine[0]/condition" value="1.0"/>

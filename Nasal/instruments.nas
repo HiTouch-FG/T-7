@@ -96,3 +96,6 @@ setlistener("/engines/engine[0]/n2",func{
              interpolate("/environment/aircraft-effects/frost-level",(getprop("/environment/total-air-temperature-degc")+10)*getprop("/environment/windowheat-level")*-0.03,1)});
 setlistener("/controls/anti-ice/window-heat",func{
              interpolate("/environment/windowheat-level",1-getprop("/controls/anti-ice/window-heat")*0.9,10)});
+
+######################### Propeller-pitch PARAMETOR ##########################################
+props.globals.getNode("/controls/engines/engine/propeller-pitch", 0).setIntValue(0);

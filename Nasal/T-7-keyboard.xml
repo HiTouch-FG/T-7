@@ -59,14 +59,6 @@
    <command>nasal</command>
    <script>controls.adjMixture(-1)</script>
   </binding>
-                <binding>
-                    <command>property-adjust</command>
-                    <property>controls/engines/engine[0]/condition</property>
-                    <step>-0.1</step>
-                    <min>0.1</min>
-                    <max>1</max>
-                    <wrap>0</wrap>
-                </binding>
  </key>
 
  <key n="109">
@@ -77,24 +69,6 @@
    <command>nasal</command>
    <script>controls.adjMixture(1)</script>
   </binding>
-                <binding>
-                    <command>property-adjust</command>
-                    <property>controls/engines/engine[0]/condition</property>
-                    <step>0.1</step>
-                    <min>0.1</min>
-                    <max>1</max>
-                    <wrap>0</wrap>
-                </binding>
-            <binding>
-                <command>property-assign</command>
-                <property>controls/engines/engine/cutoff</property>
-                <value type="bool">false</value>
-            </binding>
-            <binding>
-                <command>property-assign</command>
-                <property>controls/engines/engine/propeller-feather</property>
-                <value type="bool">false</value>
-            </binding>
  </key>
   </PropertyList>
 

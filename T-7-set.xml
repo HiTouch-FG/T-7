@@ -4,10 +4,10 @@
 
   <sim>
     <description>T-7 (YASim)</description>
-    <author>Hitoshi Uchida(3D/FDM)</author>
     <flight-model archive="y">yasim</flight-model>
     <aero archive="y">T-7-yasim</aero>
-    <status>v2.4</status>
+    <long-description>Ver.2.5</long-description>
+    <author>Hitoshi Uchida 'HiTouch'(3D/FDM)</author>
   </sim>
 
 </PropertyList>
