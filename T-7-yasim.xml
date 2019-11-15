@@ -19,7 +19,7 @@
 
 <airplane mass="2433">
 
-  <approach speed="58" aoa="8" fuel="0.7">
+  <approach speed="80" aoa="8" fuel="0.7">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
     <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
     <control-setting axis="/controls/engines/engine[0]/condition" value="1.0"/>
@@ -101,7 +101,7 @@
              coarse-stop="4.0">
              <actionpt x="4.0" y="0" z="0.250"/>
              <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE"/>
-             <turbine-engine eng-power="450"
+             <turbine-engine eng-power="380"
                              eng-rpm="2700"
                              alt="0"
                              flat-rating="380"

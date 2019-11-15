@@ -6,7 +6,7 @@
     <description>T-7 (YASim)</description>
     <flight-model archive="y">yasim</flight-model>
     <aero archive="y">T-7-yasim</aero>
-    <long-description>Ver.2.5</long-description>
+    <long-description>Ver.2.6</long-description>
     <author>Hitoshi Uchida 'HiTouch'(3D/FDM)</author>
   </sim>
 

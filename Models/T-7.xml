@@ -962,6 +962,51 @@
     </offsets>
   </model>
 
+   <model>
+    <name>TireSmokeRight</name>
+    <path>Aircraft/T-7/Models/effect/tiresmoke/tiresmoke.xml</path>
+    <offsets>
+      <x-m> -0.950 </x-m>
+      <y-m>  1.3 </y-m>
+      <z-m> -0.884 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>TireSmokeRight</object-name>
+      <condition>
+	<greater-than>
+          <property>/gear/gear[1]/compression-m</property>
+	  <value>0.09</value>
+	</greater-than>
+      </condition>
+  </animation>
+
+   <model>
+    <name>TireSmokeLeft</name>
+    <path>Aircraft/T-7/Models/effect/tiresmoke/tiresmoke.xml</path>
+    <offsets>
+      <x-m> -0.950 </x-m>
+      <y-m> -1.3 </y-m>
+      <z-m> -0.884 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>TireSmokeLeft</object-name>
+      <condition>
+	<greater-than>
+          <property>/gear/gear[0]/compression-m</property>
+	  <value>0.09</value>
+	</greater-than>
+      </condition>
+  </animation>
+
+
+
+
 </PropertyList>
 
 

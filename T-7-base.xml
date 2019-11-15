@@ -36,15 +36,11 @@
     <multiplay>
       <chat_display>1</chat_display>
       <generic>
-        <int type="int">0</int>  <!-- 0 immat -->
-        <int type="int">0</int>  <!-- 1 immat -->
-        <int type="int">0</int>  <!-- 2 immat -->
-        <int type="int">0</int>  <!-- 3 immat -->
-        <int type="int">0</int>  <!-- 4 immat -->
-        <int type="int">0</int>  <!-- 5 immat -->
-        <int type="bool">0</int> <!-- 6 smoke -->
-        <int type="int">0</int>  <!-- 7 color -->
-        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+        <int n="6" type="bool"> 0 </int> <!-- 6 smoke -->
+        <int n="7" type="int"> 0 </int>  <!-- 7 color -->
+        <float n="0" alias="instrumentation/doors/crew/position-norm"/>
+        <float n="1" alias="gear/gear[0]/compression-m"/>
+        <float n="2" alias="gear/gear[1]/compression-m"/>
       </generic>
     </multiplay>
 
