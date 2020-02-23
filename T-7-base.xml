@@ -4,112 +4,91 @@
 
   <sim include="Nasal/views.xml">
 
-    <fuel-fraction>1.0</fuel-fraction>
+  	<fuel-fraction>1.0</fuel-fraction>
 
-    <startup>
-      <splash-texture>Aircraft/T-7/T-7-splash.png</splash-texture>
-    </startup>
+  	<startup>
+		<splash-texture>Aircraft/T-7/T-7-splash.png</splash-texture>
+  	</startup>
 
-    <sound>
-      <path archive="y">Aircraft/T-7/Sounds/T-7-sound.xml</path>
-    </sound>
+  	<sound>
+		<path archive="y">Aircraft/T-7/Sounds/T-7-sound.xml</path>
+  	</sound>
 
-    <model>
-      <path archive="y">Aircraft/T-7/Models/T-7.xml</path>
-      <livery>
-        <file type="string">default</file>
-      </livery>
-    </model>
+  	<model>
+		<path archive="y">Aircraft/T-7/Models/T-7.xml</path>
+		<livery>
+			<file type="string">default</file>
+		</livery>
+  	</model>
 
-   <airport>
-        <runways>
-            <start-offset-m>20</start-offset-m>
-        </runways>
-    </airport>
+  	<airport>
+		<runways>
+            		<start-offset-m>20</start-offset-m>
+        	</runways>
+  	</airport>
 
-    <flaps>
-      <setting>0.00</setting>
-      <setting>0.50</setting>
-      <setting>1.00</setting> <!-- 20 deg -->
-    </flaps>
+  	<flaps>
+		<setting>0.00</setting>
+		<setting>0.50</setting>
+		<setting>1.00</setting> <!-- 20 deg -->
+  	</flaps>
 
-    <multiplay>
-      <chat_display>1</chat_display>
-      <generic>
-        <int n="6" type="bool"> 0 </int> <!-- 6 smoke -->
-        <int n="7" type="int"> 0 </int>  <!-- 7 color -->
-        <float n="0" alias="instrumentation/doors/crew/position-norm"/>
-        <float n="1" alias="gear/gear[0]/compression-m"/>
-        <float n="2" alias="gear/gear[1]/compression-m"/>
-      </generic>
-    </multiplay>
+	<multiplay>
+		<chat_display>1</chat_display>
+		<generic>
+                	<int   n="0"  type="int">  0 </int>                                         <!--  0 immat -->
+                	<int   n="1"  type="int">  0 </int>                                         <!--  1 immat -->
+                	<int   n="2"  type="int">  0 </int>                                         <!--  2 immat -->
+                	<int   n="3"  type="int">  0 </int>                                         <!--  3 immat -->
+                	<int   n="4"  type="int">  0 </int>                                         <!--  4 immat -->
+                	<int   n="5"  type="int">  0 </int>                                         <!--  5 immat -->
+                	<int   n="6"  type="int"  alias="/sim/model/livery/show-immat"/> 
+			<int n="7" type="int"> 0 </int>  <!-- 7 color -->
+			<float n="0" alias="instrumentation/doors/crew/position-norm"/>
+			<float n="1" alias="gear/gear[0]/compression-m"/>
+			<float n="2" alias="gear/gear[1]/compression-m"/>
+		</generic>
+	</multiplay>
 
-    <help>
-      <title>T-7</title>
-      <key>
-        <name>d</name>
-        <desc>Open/Close canopy</desc>
-      </key>
-    </help>
+  	<help>
+		<title>T-7</title>
+		<key>
+			<name>d</name>
+			<desc>Open/Close canopy</desc>
+		</key>
+  	</help>
 
-    <menubar include="Dialogs/T-7-menu.xml"/>
+  	<menubar include="Dialogs/T-7-menu.xml"/>
 
-</sim>
+  </sim>
 
   <input>
-    <keyboard include="Nasal/T-7-keyboard.xml"/>
+ 	<keyboard include="Nasal/T-7-keyboard.xml"/>
   </input>
  
   <nasal>
-    <doors>
-      <file>Aircraft/T-7/Nasal/doors.nas</file>
-    </doors>
-    <T-7>
-      <file>Aircraft/T-7/Nasal/electrical.nas</file>
-      <file>Aircraft/T-7/Nasal/light.nas</file>
-      <file>Aircraft/T-7/Nasal/liveries.nas</file>
-      <file>Aircraft/T-7/Nasal/immat.nas</file>
-      <file>Aircraft/T-7/Nasal/instruments.nas</file>
-      <file>Aircraft/T-7/Models/Interior/Panel/Instruments/kns80/kns80.nas</file>
-      <file>Aircraft/T-7/Nasal/vhf22.nas</file>
-      <file>Aircraft/T-7/Nasal/vir32.nas</file> 
-    </T-7>    
-    <m877>
-     <file>Aircraft/T-7/Models/Interior/Panel/Instruments/M877/M877.nas</file>
-   </m877>
-   <dmesw>
-       <file>Aircraft/T-7/Nasal/dmesw.nas</file>
-   </dmesw>
-   <nav_scripts>
-      <file>Aircraft/T-7/Nasal/nav_scripts.nas</file>
-   </nav_scripts>
+	<doors>
+		<file>Aircraft/T-7/Nasal/doors.nas</file>
+	</doors>
+	<T-7>
+      		<file>Aircraft/T-7/Nasal/electrical.nas</file>
+		<file>Aircraft/T-7/Nasal/light.nas</file>
+		<file>Aircraft/T-7/Nasal/liveries.nas</file>
+		<file>Aircraft/T-7/Nasal/immat.nas</file>
+		<file>Aircraft/T-7/Nasal/instruments.nas</file>
+		<file>Aircraft/T-7/Models/Interior/Panel/Instruments/kns80/kns80.nas</file>
+		<file>Aircraft/T-7/Nasal/vhf22.nas</file>
+		<file>Aircraft/T-7/Nasal/vir32.nas</file> 
+	</T-7>    
+	<m877>
+		<file>Aircraft/T-7/Models/Interior/Panel/Instruments/M877/M877.nas</file>
+	</m877>
+	<dmesw>
+		<file>Aircraft/T-7/Nasal/dmesw.nas</file>
+	</dmesw>
+	<nav_scripts>
+		<file>Aircraft/T-7/Nasal/nav_scripts.nas</file>
+	</nav_scripts>
   </nasal>
  
-
-  
 </PropertyList>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -5,60 +5,45 @@
   <path>T-7.ac</path>
 
  <!-- Canopy -->
-    <animation>
-        <type>select</type>
-        <condition>
-            <not>
-                <property>/sim/rendering/rembrandt/enabled</property>
-            </not>
-        </condition>
-    <object-name>vitres_2</object-name>
-    <object-name>verriere_2</object-name>
-    <object-name>co-verriere_2</object-name>
-    </animation>
-
-
-<!-- Uncomment this section for FG 3.5 ALS Glass effects -->
-    <effect>
-        <inherits-from>Effects/glass</inherits-from>
-    <object-name>vitres_2</object-name>
-    <object-name>verriere_2</object-name>
-    <object-name>co-verriere_2</object-name>
-    </effect>
-
-
-  <nasal>
-    <load>
-      var livery_update = aircraft.livery_update.new("Aircraft/T-7/Models/Liveries", 10);
-    </load>
-    <unload>
-      livery_update.stop();
-    </unload>
-  </nasal>
-
-
-   <effect>
-    <inherits-from>Effects/model-transparent</inherits-from>
-    <object-name>propdisc</object-name>
-    <object-name>propblur</object-name>
-   </effect>
-
   <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>glass_shader.png</texture>
-    <object-name>vitres</object-name>
-    <object-name>verriere</object-name>
-    <object-name>co-verriere</object-name>
+	<type>select</type>
+		<condition>
+		<not>
+			<property>/sim/rendering/rembrandt/enabled</property>
+		</not>
+		</condition>
+	<object-name>vitres_2</object-name>
+	<object-name>verriere_2</object-name>
+	<object-name>co-verriere_2</object-name>
   </animation>
 
+  <effect>
+	<inherits-from>Effects/glass</inherits-from>
+	<object-name>vitres_2</object-name>
+	<object-name>verriere_2</object-name>
+	<object-name>co-verriere_2</object-name>
+  </effect>
 
+  <effect>
+	<inherits-from>Effects/model-transparent</inherits-from>
+	<object-name>propdisc</object-name>
+	<object-name>propblur</object-name>
+  </effect>
 
   <animation>
-    <type>noshadow</type>
-    <object-name>vitres</object-name>
-    <object-name>verriere</object-name>
-    <object-name>co-verriere</object-name>
+	<type>shader</type>
+	<shader>chrome</shader>
+	<texture>glass_shader.png</texture>
+	<object-name>vitres</object-name>
+	<object-name>verriere</object-name>
+	<object-name>co-verriere</object-name>
+  </animation>
+
+  <animation>
+	<type>noshadow</type>
+	<object-name>vitres</object-name>
+	<object-name>verriere</object-name>
+ 	<object-name>co-verriere</object-name>
   </animation>
 
 
@@ -103,85 +88,82 @@
 
 
 <!-- Pushback -->
-<model>
- <name>Pushback</name>
- <path>Aircraft/T-7/Models/towing_car/towing_car.xml</path>
-  <condition>
- <less-than-equals>
-     <property>velocities/airspeed-kt</property>
-     <value>80</value>
- </less-than-equals>
-  </condition>
-   <offsets>
-            <x-m>-3.6</x-m>
-            <y-m>-0.00</y-m>
-            <z-m>-1.10</z-m>
- </offsets>
-</model> 
+  <model>
+	<name>Pushback</name>
+	<path>Aircraft/T-7/Models/towing_car/towing_car.xml</path>
+	<condition>
+		<less-than-equals>
+			<property>velocities/airspeed-kt</property>
+			<value>80</value>
+		</less-than-equals>
+	</condition>
+	<offsets>
+		<x-m>-3.6</x-m>
+		<y-m>-0.00</y-m>
+		<z-m>-1.10</z-m>
+	</offsets>
+  </model> 
 
   <!-- Interior -->
   <model>
-    <path>Aircraft/T-7/Models/Interior/interior.xml</path>
-    <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
-    </offsets>
+	<path>Aircraft/T-7/Models/Interior/interior.xml</path>
+	<offsets>
+		<x-m> 0 </x-m>
+		<y-m> 0 </y-m>
+		<z-m> 0 </z-m>
+		<roll-deg> 0 </roll-deg>
+		<pitch-deg> 0 </pitch-deg>
+		<heading-deg> 0 </heading-deg>
+	</offsets>
   </model>
 
-  <!-- Immatriculatoin
+  <!-- Immatriculatoin  -->
   <model>
-    <path>Aircraft/T-7/Models/Immat/immat.xml</path>
-    <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
-    </offsets>
-  </model> -->
+	<path>Aircraft/T-7/Models/Immat/immat.xml</path>
+	<offsets>
+		<x-m> 0 </x-m>
+		<y-m> 0 </y-m>
+		<z-m> 0 </z-m>
+		<roll-deg> 0 </roll-deg>
+		<pitch-deg> 0 </pitch-deg>
+		<heading-deg> 0 </heading-deg>
+	</offsets>
+  </model>
 
-
-  <!-- Une ombre pour OSG -->
+  <!-- SHADOW OSG -->
   <model>
-    <name>shadowOSG</name>
-    <path>Aircraft/T-7/Models/shadow.xml</path>
+	<name>shadowOSG</name>
+	<path>Aircraft/T-7/Models/shadow.xml</path>
   </model>
 
  <animation>
-    <type>select</type>
-    <object-name>shadowOSG</object-name>
-    <condition>
-      <and>
-      <equals>
-        <property>/sim/rendering/rembrandt/enabled</property>
-        <value>false</value>
-      </equals>
-      <equals>
-        <property>/sim/replay/replay-state</property>
-        <value>0</value>
-      </equals>
-      </and>
-    </condition>
+	<type>select</type>
+	<object-name>shadowOSG</object-name>
+	<condition>
+		<and>
+			<equals>
+				<property>/sim/rendering/rembrandt/enabled</property>
+				<value>false</value>
+			</equals>
+			<equals>
+ 				<property>/sim/replay/replay-state</property>
+				<value>0</value>
+			</equals>
+		</and>
+	</condition>
   </animation>
 
-  <!-- L'helice --> 
+  <!-- HELICE --> 
   <animation>
-    <name>HeliceComplete</name>
-    <object-name>propdisc</object-name>
-    <object-name>propblur</object-name>
-    <object-name>helice</object-name>
-    <object-name>helice.001</object-name>
-    <object-name>bol</object-name>
+	<name>HeliceComplete</name>
+	<object-name>propdisc</object-name>
+	<object-name>propblur</object-name>
+	<object-name>helice</object-name>
+	<object-name>helice.001</object-name>
+	<object-name>bol</object-name>
   </animation>
 
-
-
-  <!-- Selection de l'objet visible en fonction des rpm -->
+  <!-- Selection object visible at RPM -->
   <animation>
     <type>select</type>
     <object-name>propdisc</object-name>

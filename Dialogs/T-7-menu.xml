@@ -3,40 +3,33 @@
 <PropertyList>
 
   <default>
-
- <menu n="10">
-   <item n="10">
-    <label>Pushback</label>
-    <name>pushback</name>
-    <binding>
-     <command>dialog-show</command>
-     <dialog-name>pushback</dialog-name>
-    </binding>
-   </item>
-  </menu>
-
-    <menu n="10">
-      <label>T-7</label>
-      <enabled type="bool">true</enabled>
-      <item>
-        <label>Select Livery</label>
-        <binding>
-          <command>nasal</command>
-          <script>aircraft.livery.dialog.toggle()</script>
-        </binding>
-      </item>
-      <item>
-        <label>Immatriculation</label>
-        <binding>
-          <command>nasal</command>
-          <script>T-7.immat_dialog.toggle()</script>
-        </binding>
-      </item>
-    </menu>
+	<menu n="10">
+		<label>T-7</label>
+		<enabled type="bool">true</enabled>
+		<item>
+			<label>Pushback</label>
+			<name>pushback</name>
+			<binding>
+				<command>dialog-show</command>
+				<dialog-name>pushback</dialog-name>
+			</binding>
+		</item>
+		<item>
+			<label>Select Livery</label>
+			<binding>
+				<command>nasal</command>
+				<script>aircraft.livery.dialog.toggle()</script>
+			</binding>
+		</item>
+		<item>
+			<label>Select Immatriculation</label>
+			<binding>
+				<command>dialog-show</command>
+				<dialog-name>Immatriculation</dialog-name>
+			</binding>
+		</item>
+	</menu>
   </default>
 
 </PropertyList>
-
-
-
 

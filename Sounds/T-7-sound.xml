@@ -11,7 +11,7 @@
 		<door>
 			<name>door</name>
 			<mode>looped</mode>
-			<path>Aircraft/SH-60J/Sounds/rumble.wav</path>
+			<path>Aircraft/T-7/Sounds/rumble.wav</path>
 			<condition>
                             <and>
                                <greater-than>
@@ -578,29 +578,81 @@
     </click>
 
   <stall>
-   <name>stall</name>
-   <mode>looped</mode>
-   <type>avionics</type>
-   <path>Sounds/stall.wav</path>
-   <condition>
-    <and>
-     <less-than>
-       <property>velocities/airspeed-kt</property>
-       <value>60</value>
-     </less-than>
-    <not>
-       <property>gear/gear[0]/wow</property>
-       <property>gear/gear[1]/wow</property>
-       <property>gear/gear[2]/wow</property>
-     </not>
-    </and>
-   </condition>
-   <volume>
-    <factor>1.0</factor>
-   </volume>
-   <reference-dist>10.0</reference-dist>
-   <max-dist>20.0</max-dist>
+	<name>pre-stall</name>
+	<mode>looped</mode>
+	<type>avionics</type>
+	<path>Sounds/stall-600-chopped.wav</path>
+	<condition>
+		<and>
+			<greater-than>
+				<property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
+				<value> 57 </value>
+			</greater-than>
+			<less-than>
+				<property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
+				<value> 62 </value>
+			</less-than>
+			<not>
+				<property>gear/gear[0]/wow</property>
+			</not>
+			<not>
+				<property>gear/gear[1]/wow</property>
+			</not>
+		</and>
+	</condition>
+	<volume>
+		<factor>1.0</factor>
+	</volume>
+	<reference-dist>10.0</reference-dist>
+	<max-dist>20.0</max-dist>
   </stall>
+
+  <stall>
+	<name>stall</name>
+	<mode>looped</mode>
+	<type>avionics</type>
+	<path>Sounds/stall-600-continue.wav</path>
+	<condition>
+		<and>
+			<less-than>
+				<property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
+				<value> 57 </value>
+			</less-than>
+			<not>
+				<property>gear/gear[0]/wow</property>
+			</not>
+			<not>
+				<property>gear/gear[1]/wow</property>
+			</not>
+		</and>
+	</condition>
+	<volume>
+		<factor>1.0</factor>
+	</volume>
+	<reference-dist>10.0</reference-dist>
+	<max-dist>20.0</max-dist>
+  </stall>
+
+  <squeal>
+	<name>TIRESMOKE</name>
+	<type>effect</type>
+	<path>Sounds/squeal.wav</path>
+	<condition>
+		<or>
+			<greater-than>
+          			<property>/gear/gear[0]/compression-m</property>
+	  			<value>0.09</value>
+			</greater-than>
+			<greater-than>
+          			<property>/gear/gear[1]/compression-m</property>
+	  			<value>0.09</value>
+			</greater-than>
+		</or>
+	</condition>
+	<volume>
+		<factor>1.0</factor>
+	</volume>
+  </squeal>
 
   </fx>
 

@@ -449,9 +449,9 @@
   <model>
     <path>Aircraft/T-7/Models/Interior/Panel/Instruments/switches/landing-lights.xml</path>
     <offsets>
-       <x-m> -1.790 </x-m>
+       <x-m> -1.783 </x-m>
       <y-m> -0.400 </y-m>
-      <z-m> 0.302 </z-m>
+      <z-m> 0.270 </z-m>
       <roll-deg>    0 </roll-deg>
       <pitch-deg>   -5 </pitch-deg>
       <heading-deg> 5 </heading-deg>

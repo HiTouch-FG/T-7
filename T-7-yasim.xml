@@ -19,8 +19,8 @@
 
 <airplane mass="2433">
 
-  <approach speed="80" aoa="8" fuel="0.7">
-    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
+  <approach speed="65" aoa="7" fuel="0.7">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.5"/>
     <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
     <control-setting axis="/controls/engines/engine[0]/condition" value="1.0"/>
     <control-setting axis="/controls/flight/flaps" value="1.0"/>
@@ -44,7 +44,8 @@
         length="5.012"
         taper="0.55"
         dihedral="4"
-        camber="0.067">
+        camber="0.067"
+	incidence="1.0">
         <stall aoa="18" width="1.0" peak="1.5"/>
         <flap0 start="0.027" end="0.535" lift="1.4" drag="1.5"/>
         <flap1 start="0.535" end="0.946" lift="1.2" drag="1.1"/>
@@ -78,7 +79,8 @@
        chord="1.350"
        length="1.306"
        taper="0.34"
-       sweep="35">
+       sweep="35"
+       incidence="-2">
        <stall aoa="18" width="3" peak="1.5"/>
        <flap0 start="0" end="0.935" lift="1.6" drag="1.3"/>
 

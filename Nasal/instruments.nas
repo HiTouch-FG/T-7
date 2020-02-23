@@ -99,3 +99,4 @@ setlistener("/controls/anti-ice/window-heat",func{
 
 ######################### Propeller-pitch PARAMETOR ##########################################
 props.globals.getNode("/controls/engines/engine/propeller-pitch", 0).setIntValue(0);
+

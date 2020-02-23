@@ -3,14 +3,36 @@
 <PropertyList include="T-7-base.xml">
 
   <sim>
-    <description>T-7 (YASim)</description>
-    <flight-model archive="y">yasim</flight-model>
-    <aero archive="y">T-7-yasim</aero>
-    <long-description>Ver.2.6</long-description>
-    <author>Hitoshi Uchida 'HiTouch'(3D/FDM)</author>
+	<description>T-7 (YASim)</description>
+	<long-description>Ver.2.7</long-description>
+	<author>Hitoshi Uchida 'HiTouch'(3D/FDM)</author>
+	<rating>
+		<FDM type="int">0</FDM>
+		<systems type="int">0</systems>
+		<cockpit type="int">0</cockpit>
+		<model type="int">0</model>
+	</rating>
+	<flight-model archive="y">yasim</flight-model>
+	<aero archive="y">T-7-yasim</aero>
+	
+	<previews>
+		<preview>
+			<type>exterior</type>
+			<splash type="bool">true</splash>
+			<path>Splash/exterior1.jpg</path>
+		</preview>
+		<preview>
+			<type>exterior</type>
+			<splash type="bool">true</splash>
+			<path>Splash/exterior2.jpg</path>
+		</preview>
+		<preview>
+			<type>exterior</type>
+			<splash type="bool">true</splash>
+			<path>Splash/exterior3.jpg</path>
+		</preview>
+	</previews>
   </sim>
 
 </PropertyList>
-
-
 
