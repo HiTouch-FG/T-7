@@ -73,6 +73,7 @@
 	<T-7>
       		<file>Aircraft/T-7/Nasal/electrical.nas</file>
 		<file>Aircraft/T-7/Nasal/light.nas</file>
+		<file>Aircraft/T-7/Nasal/light-manager.nas</file>
 		<file>Aircraft/T-7/Nasal/liveries.nas</file>
 		<file>Aircraft/T-7/Nasal/immat.nas</file>
 		<file>Aircraft/T-7/Nasal/instruments.nas</file>

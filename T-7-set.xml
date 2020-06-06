@@ -4,7 +4,7 @@
 
   <sim>
 	<description>T-7 (YASim)</description>
-	<long-description>Ver.2.7</long-description>
+	<long-description>Ver.2.8</long-description>
 	<author>Hitoshi Uchida 'HiTouch'(3D/FDM)</author>
 	<rating>
 		<FDM type="int">0</FDM>
